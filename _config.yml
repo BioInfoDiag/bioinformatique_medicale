@@ -1,0 +1,14 @@
+# Book settings
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
+copyright: "GNU GENERAL DOCUMENTATION - 2020"
+
+
+repository:
+  url: http://github.com/dridk/bioinformatique_medicale
+
+
+latex:
+  latex_documents:
+    targetname: book.tex

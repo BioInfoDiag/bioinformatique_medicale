@@ -1,0 +1,5 @@
+- file: intro
+
+- part: Informatique
+  chapters:
+  - file: part1/informatique_theorique
