@@ -18,19 +18,9 @@ La table associant les bits à leurs signifiant est appelé une norme de codage.
 Cette norme est défini dans la specification du format d'un fichier informatique. Tous vos fichiers, que ce soit des vidéos, des images ou du texte sont representer de façon binaire en utilisant des normes spécifique.
 Les ordinateurs actuelles ne manipule pas directement les bits. Mais plutôt des groupes de 8 bits appelé octet ou bytes en anglais .Imaginez cela comme des grus ne pouvant déplacer que des bloque de 8 bits. 
 
-```{note}
-Le Saviez vous ? Claude Shannon et companies travaillaient tous chez Bell ! 
-```
-
 ### L'encodage ASCII 
 L'encodage ASCII est une norme de codage pour définir les caractères alpha numérique. Ils sont défini sur 8 bits ( en faite 7 bits .. mais ) et permette de representer 128 caractères. 
 Nous verons plus tard, que cette encodage est utilisé astucieusement pour définir la qualité de séquençage. 
-
-Donc pour résumer : 
-```{tip}
-Le Saviez vous ? Claude Shannon et companies travaillaient tous chez Bell ! 
-```
-
 
 ### L'ADN une séquence numérique 
 L'ADN est une séquence numérique au même titre que l'information circulant dans votre ordinateur. A l'instar du binaire qui utilise 2 symboles, l'ADN utilise 4 symboles via les 4 nucléotides A,C,G,T pour décrire le contenu en acide-aminé d'une protéine.  
