@@ -15,6 +15,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ### Généralité
 #### Système de fichier
+Tout est fichier dans les systèmes Unix comme Linux.
 ##### Arboresence Linux
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
