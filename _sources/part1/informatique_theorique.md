@@ -4,16 +4,20 @@
 
 
 ### Le système binaire
-Les ordinateurs utilisent le système binaire pour representer l'information.
-C'est à dire une suite de symbole pouvant prendre deux valeurs (0 ou 1) et que l'on appelle bit. Par exemple avec 1 bit, nous pouvons representer 2 choses. Le noir et le blanc ou la valeur Vrai ou Faux. 
-Avec 2 bit, il y a 4 combinaisons possible, et nous pouvons ainsi representer par exemples 4 couleurs. 
+
+Dans un langage, Pour representer l'information, nous utilisons des symboles. En les combinant ensemble nous pouvons leurs donner du sens.  
+Par exemple, notre alphabet est composé de 26 symboles pour representer des mots. Et le système de numération que nous utilisons est composé de 10 symboles (0,1,2,3,4,5,6,8,9) pour représenter n'importe quelle nombre entier naturel. 
+Les ordinateurs quant à eux, utilisent 2 symboles (le 1 et le 0), appelé bit, pour representer n'importe quoi.
+Par exemple pour representer 4 couleurs, un ordinateur pourrait utiliser une combinaison de 2 bits:
 
 	00 : Noir 
 	01:  Gris foncé 
 	10:  Gris clair
 	11 : Blanc
 
-De façon général, avec N bits, nous pouvons representer 2^N choses différentes. Par exemple, pour representer une image de façon binaire, nous pouvons encoder chaque pixel sur 1,2,4 bits. 
+
+De façon général, avec N bits, nous pouvons representer 2^N choses différentes. 
+
 La table associant les bits à leurs signifiant est appelé une norme de codage. 
 Cette norme est défini dans la specification du format d'un fichier informatique. Tous vos fichiers, que ce soit des vidéos, des images ou du texte sont representer de façon binaire en utilisant des normes spécifique.
 Les ordinateurs actuelles ne manipule pas directement les bits. Mais plutôt des groupes de 8 bits appelé octet ou bytes en anglais .Imaginez cela comme des grus ne pouvant déplacer que des bloque de 8 bits. 
