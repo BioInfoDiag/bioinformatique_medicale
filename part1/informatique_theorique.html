@@ -46,6 +46,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -329,9 +331,21 @@ des sociétés comme …</p>
 <h2>Comment mesurer l’information ?<a class="headerlink" href="#comment-mesurer-l-information" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="l-entropie-de-shannon">
 <h3>L’entropie de Shannon<a class="headerlink" href="#l-entropie-de-shannon" title="Permalink to this headline">¶</a></h3>
-<p>Claude shannon est …
-Imaginez un phare ….
-L’information dépend du contexte ….</p>
+<p>L’entropie est une mesure emprunter de la thermodynamique pour quantifier l’information d’une séquence de symbole.
+Ennoncé par Claude Shannon en 1948 dans “A mathematical theory of communication”, cette fonction mathématique a permis l’essort des communications
+modernes et le développement d’algorithme de compression.<br />
+L’entropie de Shannon peut être vu comme le nombre de bit minimum, en moyenne, nécessaire pour lever une incertitude dans un contexte donné.
+Imaginons par exemple, un carnet ou vous avez noté depuis un an la météo du jour comme deux évenements ( Soleil ou Pluie ). Vivant à rennes, vous constatez alors qu’il pleut 50% du temps. Demain, il y a donc 1 chance sur 2 qu’il pleuve. Votre incertitude est de 1/2. Combien de question minimum devrez vous poser à une station météo pouvant vous répondre uniquement par oui ou par non ? Dis autrement, combien de bit la sation météo devra vous transmettre afin de lever votre incertitude. Dans ce cas précis, l’entropie noté H est de 1 bit. 1 seul bit est suffisant pour réduire votre incertitude.
+Si cette fois, nous avions noté 4 évenements différents, tous équiprobable et exclusive (25% de soleil, 25% pluie, 25% neige, 25%nuageux). Combien de question minimum devrait vous poser pour lever votre incertitude qui est ici de 1/4 ? La plus part des gens répondent 3. Mais en réalité, 2 questions suffisents si on les pose correctement.</p>
+<ul class="simple">
+<li><p>Neige ou soleil demain ?  NON</p></li>
+<li><p>nuage ? Non… Donc grele</p></li>
+</ul>
+<p>De façon général, l’entropie de shannon d’une suite d’évènement i , se calcul comme la somme des probabilités de chaque évenements multiplié par son log.</p>
+<div class="math notranslate nohighlight">
+\[
+wow = H(X) = -\sum_i P_i \log_2(P_i)
+\]</div>
 </div>
 </div>
 <div class="section" id="comment-transformer-de-l-information">
