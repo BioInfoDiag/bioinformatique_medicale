@@ -60,7 +60,7 @@ $$
 ## Comment transformer de l'information ? 
 ### La machine de Turing 
 
-Une machine de Turing fonctionne .... 
+![machine de Turing](https://i.gifer.com/9dzg.gif)
 
 ### Complexité algorithmique 
 Complexité algorithmique 
