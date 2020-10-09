@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informatique théorique &#8212; My sample book</title>
     
-  <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -25,7 +25,7 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.bfb7730f9caf2ec0b46a44615585038c.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.30270b6e4c972e43c488.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -162,7 +162,8 @@
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
@@ -234,6 +235,11 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definitions-de-base">
+     Définitions de base
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#le-processeur">
      Le processeur
     </a>
@@ -244,8 +250,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#la-memoire-physique">
-     La mémoire physique
+    <a class="reference internal nav-link" href="#les-disques-durs">
+     Les disques durs
     </a>
    </li>
   </ul>
@@ -296,19 +302,18 @@ Par exemple pour representer 4 couleurs, un ordinateur pourrait utiliser une com
 </div>
 <p>De façon général, avec N bits, nous pouvons representer 2^N choses différentes.</p>
 <p>La table associant les bits à leurs signifiant est appelé une norme de codage.
-Cette norme est défini dans la specification du format d’un fichier informatique. Tous vos fichiers, que ce soit des vidéos, des images ou du texte sont representer de façon binaire en utilisant des normes spécifique.
-Les ordinateurs actuelles ne manipule pas directement les bits. Mais plutôt des groupes de 8 bits appelé octet ou bytes en anglais .Imaginez cela comme des grus ne pouvant déplacer que des bloque de 8 bits.</p>
+Cette norme est définie dans la specification du format d’un fichier informatique. Tous vos fichiers, que ce soit des vidéos, des images ou du texte sont representés de façon binaire en utilisant des normes spécifiques.
+Les ordinateurs actuels ne manipulent pas directement les bits. Mais plutôt des groupes de 8 bits appelé octets (ou bytes en anglais).</p>
 </div>
 <div class="section" id="l-encodage-ascii">
 <h3>L’encodage ASCII<a class="headerlink" href="#l-encodage-ascii" title="Permalink to this headline">¶</a></h3>
-<p>L’encodage ASCII est une norme de codage pour définir les caractères alpha numérique. Ils sont défini sur 8 bits ( en faite 7 bits .. mais ) et permette de representer 128 caractères.
-Nous verons plus tard, que cette encodage est utilisé astucieusement pour définir la qualité de séquençage.</p>
+<p>L’encodage ASCII est une norme de codage pour définir les caractères alpha-numériques. Ils sont définis sur un octet et permettent de representer 128 caractères. Nous verrons plus tard, que cet encodage est utilisé astucieusement pour définir la qualité de séquençage.</p>
 </div>
 <div class="section" id="l-adn-une-sequence-numerique">
 <h3>L’ADN une séquence numérique<a class="headerlink" href="#l-adn-une-sequence-numerique" title="Permalink to this headline">¶</a></h3>
 <p>L’ADN est une séquence numérique au même titre que l’information circulant dans votre ordinateur. A l’instar du binaire qui utilise 2 symboles, l’ADN utilise 4 symboles via les 4 nucléotides A,C,G,T pour décrire le contenu en acide-aminé d’une protéine.<br />
-Et comme en informatique, il existe une norme de codage permettant la traduction de 3 nucléotides ou triplet en acide aminée.
-La comparaison est tellement vrai, qu’il existe comme avec le codage ASCII des caractères de ponctuation comme les codons stops.
+Et comme en informatique, il existe une norme de codage permettant la traduction de 3 nucléotides (ou triplets) en acide aminée.
+La comparaison est tellement vraie, qu’il existe comme avec le codage ASCII des caractères de ponctuation comme les codons stops.
 Des études recentes, ont reussi à écrire de l’information dans de l’ADN..
 D’autre, on reussi à pirater un sequenceur …
 des sociétés comme …</p>
@@ -337,14 +342,32 @@ Thèse de Church et truc</p>
 </div>
 <div class="section" id="l-architecture-d-un-ordinateur">
 <h2>L’architecture d’un ordinateur<a class="headerlink" href="#l-architecture-d-un-ordinateur" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definitions-de-base">
+<h3>Définitions de base<a class="headerlink" href="#definitions-de-base" title="Permalink to this headline">¶</a></h3>
+<p>Pour les définitions de base, je vous ivite à consulter wikipedia qui contient énormément d’informations (les liens sont dans les noms).</p>
+<ul class="simple">
+<li><p>Un <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Bit">bit</a></strong> est l’unité d’énumération la plus simple, prenant deux valeurs (0/1 ou faux/vrai).</p></li>
+<li><p>Le <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Transistor">transistor</a></strong> est le composant électronique qui donne corps au concept de bit puisqu’il peut avoir deux états : bloqué ou conducteur. Par exemple, un processeur <em>i7 Haswell</em> contient 2,7 milliards de transistors.</p></li>
+<li><p>Un <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Octet">octet</a></strong> (ou <strong>byte</strong>), constitué de 8 bits, est l’unité de base pour coder une information. Il est utilisé pour définir la taille des mémoires (exprimée en Kilo-octet, Mega-octet, Giga-octet…).</p></li>
+<li><p>La <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/M%C3%A9moire_(informatique)">mémoire</a></strong> (vive, morte, cache, etc) peut être vue comme une suite d’octets posés les uns à côté des autres. On parlera de <strong>tableau</strong> (ou <strong>array</strong>) à une dimension dans lequel chaque case possède un numéro (son <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Adressage_m%C3%A9moire">adresse</a></strong>) et un contenu (la <strong>valeur</strong> de l’octet).</p></li>
+</ul>
+</div>
 <div class="section" id="le-processeur">
 <h3>Le processeur<a class="headerlink" href="#le-processeur" title="Permalink to this headline">¶</a></h3>
+<p>Le <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Processeur">processeur</a></strong> est le composant qui réalise des calculs sur des octets. Il possède des petites mémoires internes sur lesquelles il peut appliquer des instructions : les <strong><a class="reference external" href="https://fr.wikipedia.org/wiki/Processeur#Fonctionnement">registres</a></strong>. La taille des registres défini le <em>type</em> de processeur : si les registres font 1 octet, on parlera de système 8 bits (comme les premières Nintendo) ; si les registres font 8 octet, on parlera de système 64 bits (comme les processeurs actuels).</p>
+<p>Le processeur possède également une <strong>unité de contrôle</strong>, qui organise la distribution des instructions à effectuer et une <strong>horloge</strong>, qui permet de synchroniser les instructions. La vitesse d’horloge s’exprime en <strong>hertz</strong> (Gigahertz pour les processeurs actuels). Pour simplifier, on peut considérer qu’à chaque <em>bip</em> de l’horloge, le processeur effectue une opération sur ses registres (attention, ce n’est pas si simple).</p>
+<p>La <strong>vitesse</strong> de traitement d’un processeur s’exprime par le nombre d’instructions qu’il est capable d’effectuer par seconde. On pourrait croire que cette vitesse est directement lié à la vitesse de l’horloge et au nombre de registres mais c’est plus compliqué qu’il n’y paraît.</p>
+<p>En effet, les processeurs modernes embarquent généralement la possibilité de <em>vectoriser</em> les calculs. Par exemple, si vous avez la même opération à effectuer sur toutes les cases d’un tableau, le processeur pourra toutes les calculer en un seul <em>bip</em> d’horloge. Cette capacité est intégrée dans beaucoup de langages pour l’analyse de données comme Python (Pandas), R, Julia, etc. Il ne faut pas négliger la vectorisation qui permet d’accélérer drastiquement les calculs (on peut passer de 5h de calcul à moins d’une minute).</p>
 </div>
 <div class="section" id="la-memoire-vive">
 <h3>La mémoire vive<a class="headerlink" href="#la-memoire-vive" title="Permalink to this headline">¶</a></h3>
+<p>Je vous conseille la lecture de <a class="reference external" href="https://www.akkadia.org/drepper/cpumemory.pdf">What every programmer should know about memory</a>. Datant de 2007 mais toujours d’actualité, ce document très technique explique les concepts clés des communications entre CPU, RAM, Disque, bref tout ce qui se passe dans les mémoires de l’ordinateur. Même si vous ne comprenez pas tout, il me semble important de l’avoir lu au moins une fois pour votre culture générale en informatique.</p>
+<p>La mémoire vive (ou RAM pour Random Access Memory) est basée sur un élément physique que vous avez sans doute rencontré : la barrette de RAM. Il s’agit d’un circuit électronique sur lequel sont soudés des composants qui permettent de stocker des octets tant qu’ils sont alimentés en électricité. Une fois qu’on débranche le courant, tout est effacé.</p>
+<p>La mémoire vive a donc une certaine capacité en octets quelle ne peut pas dépasser. Aujourd’hui, les ordinateurs du commerce ont entre 4Go et 8Go de RAM de base.</p>
+<p>La mémoire vive sert de relais entre le processeur, les disques et les autres périphériques, bref c’est le centre de communication de l’ordinateur. Lorsque vous allumez un ordinateur, le système d’exploitation (Windows, Linux, MacOs…) est d’abord chargé dans la mémoire vive pour pouvoir s’exécuter. Ensuite, dès que vous allez chercher des fichiers ou que vous lancez une application, un bout de la mémoire vive est dédié à cette tâche.</p>
 </div>
-<div class="section" id="la-memoire-physique">
-<h3>La mémoire physique<a class="headerlink" href="#la-memoire-physique" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="les-disques-durs">
+<h3>Les disques durs<a class="headerlink" href="#les-disques-durs" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="les-languages-de-programmation">
@@ -406,7 +429,7 @@ Thèse de Church et truc</p>
     </div>
 
     
-  <script src="../_static/js/index.30270b6e4c972e43c488.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
