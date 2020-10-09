@@ -1,5 +1,11 @@
 # Informatique théorique 
 
+> It's not magic, you just don't understand it yet - Ryan Oglesby 
+
+L'informatique est omniprésente de nos jour aussi bien dans nos loisir que nos métiers. Les fondements théoriques sont pourtant rarement enseigné et l'outil est souvent utilisé comme une boite noire cachant un incroyable mystère. 
+En tant que formation en bioinformatique, il nous parait importer d'aborder certain concepte théorique en science de l'information qui pourrons être utilisé come un socle pour comprendre le fonctionnement et les containtes des algorithmes utilisé en bioinformatique. 
+Nous ce chapitre, nous définirons l'information et comment la quantifier. Puis nous détaillerons le fonctionnement d'une machine d'une turing, l'ancêtre de nos ordinateurs, qui nous conduira à la définition des algorithmes et de leurs complexités. Nous détaillerons enfin l'architecture et les différents composants d'un ordinateur moderne.
+
 ## Comment representer l'information ? 
 
 ### Le système binaire
