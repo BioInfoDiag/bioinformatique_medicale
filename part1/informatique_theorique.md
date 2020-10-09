@@ -51,7 +51,7 @@ Thèse de Church et truc
 
 ### Définitions de base
 
-Pour les définitions de base, je vous ivite à consulter wikipedia qui contient énormément d'informations (les liens sont dans les noms).
+Pour les définitions de base, je vous invite à consulter wikipedia qui contient énormément d'informations (les liens sont dans les noms).
 
 * Un **[bit](https://fr.wikipedia.org/wiki/Bit)** est l'unité d'énumération la plus simple, prenant deux valeurs (0/1 ou faux/vrai). 
 * Le **[transistor](https://fr.wikipedia.org/wiki/Transistor)** est le composant électronique qui donne corps au concept de bit puisqu'il peut avoir deux états : bloqué ou conducteur. Par exemple, un processeur *i7 Haswell* contient 2,7 milliards de transistors.
@@ -62,6 +62,8 @@ Pour les définitions de base, je vous ivite à consulter wikipedia qui contient
 
 Le **[processeur](https://fr.wikipedia.org/wiki/Processeur)** est le composant qui réalise des calculs sur des octets. Il possède des petites mémoires internes sur lesquelles il peut appliquer des instructions : les **[registres](https://fr.wikipedia.org/wiki/Processeur#Fonctionnement)**. La taille des registres défini le *type* de processeur : si les registres font 1 octet, on parlera de système 8 bits (comme les premières Nintendo) ; si les registres font 8 octet, on parlera de système 64 bits (comme les processeurs actuels).
 
+![Processeur](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Micro-processeur.JPG/320px-Micro-processeur.JPG)
+
 Le processeur possède également une **unité de contrôle**, qui organise la distribution des instructions à effectuer et une **horloge**, qui permet de synchroniser les instructions. La vitesse d'horloge s'exprime en **hertz** (Gigahertz pour les processeurs actuels). Pour simplifier, on peut considérer qu'à chaque *bip* de l'horloge, le processeur effectue une opération sur ses registres (attention, ce n'est pas si simple).
 
 La **vitesse** de traitement d'un processeur s'exprime par le nombre d'instructions qu'il est capable d'effectuer par seconde. On pourrait croire que cette vitesse est directement lié à la vitesse de l'horloge et au nombre de registres mais c'est plus compliqué qu'il n'y paraît. 
@@ -71,6 +73,8 @@ En effet, les processeurs modernes embarquent généralement la possibilité de 
 ### La mémoire vive
 
 Je vous conseille la lecture de [What every programmer should know about memory](https://www.akkadia.org/drepper/cpumemory.pdf). Datant de 2007 mais toujours d'actualité, ce document très technique explique les concepts clés des communications entre CPU, RAM, Disque, bref tout ce qui se passe dans les mémoires de l'ordinateur. Même si vous ne comprenez pas tout, il me semble important de l'avoir lu au moins une fois pour votre culture générale en informatique.
+
+![barrette de ram](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Atari_STE_256kB_RAM_1.jpg/320px-Atari_STE_256kB_RAM_1.jpg)
 
 La mémoire vive (ou RAM pour Random Access Memory) est basée sur un élément physique que vous avez sans doute rencontré : la barrette de RAM. Il s'agit d'un circuit électronique sur lequel sont soudés des composants qui permettent de stocker des octets tant qu'ils sont alimentés en électricité. Une fois qu'on débranche le courant, tout est effacé.
 
