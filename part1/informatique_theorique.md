@@ -40,9 +40,22 @@ des sociétés comme ...
 
 ## Comment mesurer l'information ? 
 ### L'entropie de Shannon
-Claude shannon est ... 
-Imaginez un phare .... 
-L'information dépend du contexte ....  
+L'entropie est une mesure emprunter de la thermodynamique pour quantifier l'information d'une séquence de symbole. 
+Ennoncé par Claude Shannon en 1948 dans "A mathematical theory of communication", cette fonction mathématique a permis l'essort des communications 
+modernes et le développement d'algorithme de compression.     
+L'entropie de Shannon peut être vu comme le nombre de bit minimum, en moyenne, nécessaire pour lever une incertitude dans un contexte donné. 
+Imaginons par exemple, un carnet ou vous avez noté depuis un an la météo du jour comme deux évenements ( Soleil ou Pluie ). Vivant à rennes, vous constatez alors qu'il pleut 50% du temps. Demain, il y a donc 1 chance sur 2 qu'il pleuve. Votre incertitude est de 1/2. Combien de question minimum devrez vous poser à une station météo pouvant vous répondre uniquement par oui ou par non ? Dis autrement, combien de bit la sation météo devra vous transmettre afin de lever votre incertitude. Dans ce cas précis, l'entropie noté H est de 1 bit. 1 seul bit est suffisant pour réduire votre incertitude.
+Si cette fois, nous avions noté 4 évenements différents, tous équiprobable et exclusive (25% de soleil, 25% pluie, 25% neige, 25%nuageux). Combien de question minimum devrait vous poser pour lever votre incertitude qui est ici de 1/4 ? La plus part des gens répondent 3. Mais en réalité, 2 questions suffisents si on les pose correctement. 
+
+- Neige ou soleil demain ?  NON
+- nuage ? Non... Donc grele 
+
+De façon général, l'entropie de shannon d'une suite d'évènement i , se calcul comme la somme des probabilités de chaque évenements multiplié par son log. 
+
+$$
+wow = H(X) = -\sum_i P_i \log_2(P_i)
+$$
+
 
 ## Comment transformer de l'information ? 
 ### La machine de Turing 
