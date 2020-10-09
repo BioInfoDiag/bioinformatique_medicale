@@ -1,12 +1,12 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
+title: Bioinformatique médicale
+author: BioinfoDiag
 logo: logo.png
 copyright: "GNU GENERAL DOCUMENTATION - 2020"
 
 
 repository:
-  url: http://github.com/dridk/bioinformatique_medicale
+  url: https://github.com/BioInfoDiag/bioinformatique_medicale
 
 
 latex:
