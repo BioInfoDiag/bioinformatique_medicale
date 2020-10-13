@@ -81,6 +81,18 @@ $$
 
 ## Comment transformer de l'information ? 
 ### La machine de Turing 
+Un ordinateur n'est rien d'autre qu'une machine transformant de l'information vers une autre information . 
+Imaginons par exemple l'image en noir et blanc vu plus haut et trouvons une machine capable d'en faire le négatif. Par exemple une machine qui lirait de façon procédurale chaque bit un par un et remplacerait le 0 par un 1 et le 1 par un 0. On pourait constuire cette machine à l'aide des composant suivant:
+- Un ruban de lecture composé de 1 et 0.  
+- une tête de lecture et d'écriture pouvant lire et écrire sur le ruban
+- Un registre d'état 
+- D'une table de vérité 
+
+Une machine de Turing universelle est une machine de Turing capable de simuler n'importe quel machine de Turing. 
+La thèse de Church stipule que tout ce qui est calculable dans l'univers peut être calculer par une machine de Turing. 
+Théorie de la calculabilité / algorithme / procedure ... 
+
+
 
 ![machine de Turing](https://i.gifer.com/9dzg.gif)
 
