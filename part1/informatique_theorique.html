@@ -232,6 +232,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algorithme">
+     Algorithme
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#complexite-algorithmique">
      Complexité algorithmique
     </a>
@@ -300,7 +305,7 @@
 </div></blockquote>
 <p>L’informatique est omniprésente de nos jour aussi bien dans nos loisir que nos métiers. Les fondements théoriques sont pourtant rarement enseigné et l’outil est souvent utilisé comme une boite noire cachant un incroyable mystère.
 En tant que formation en bioinformatique, il nous parait importer d’aborder certain concepte théorique en science de l’information qui pourrons être utilisé come un socle pour comprendre le fonctionnement et les containtes des algorithmes utilisé en bioinformatique.
-NSans entrer dans les détails,  nous définirons dans ce chapitre la nature de l’information et comment la quantifier. Puis nous détaillerons le fonctionnement d’une machine d’une turing, l’ancêtre de nos ordinateurs, qui nous conduira à la définition des algorithmes et de leurs complexités. Nous détaillerons enfin l’architecture et les différents composants d’un ordinateur moderne.</p>
+Sans entrer dans les détails,  nous définirons dans ce chapitre la nature de l’information et comment la quantifier. Puis nous détaillerons le fonctionnement d’une machine d’une turing pour comprendre comment un ordinateur calcul. Nous détaillerons enfin l’architecture et les différents composants d’un ordinateur moderne.</p>
 <div class="section" id="comment-representer-l-information">
 <h2>Comment representer l’information ?<a class="headerlink" href="#comment-representer-l-information" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="le-systeme-binaire">
@@ -395,10 +400,19 @@ La thèse de Church stipule que tout ce qui est calculable dans l’univers peut
 Théorie de la calculabilité / algorithme / procedure …</p>
 <p><img alt="machine de Turing" src="https://i.gifer.com/9dzg.gif" /></p>
 </div>
+<div class="section" id="algorithme">
+<h3>Algorithme<a class="headerlink" href="#algorithme" title="Permalink to this headline">¶</a></h3>
+<p>Un algorithme c’est une description de la procédure à suivre pour réaliser la transformation d’une information en entré (input) vers une nouvelle information en sortie (output).</p>
+</div>
 <div class="section" id="complexite-algorithmique">
 <h3>Complexité algorithmique<a class="headerlink" href="#complexite-algorithmique" title="Permalink to this headline">¶</a></h3>
-<p>Complexité algorithmique
-Thèse de Church et truc</p>
+<p>La complexité d’un algorithme est défini par la relation entre le temps d’execution et la taille de son entrée.
+Prenons, les 6 chiffres suivants et supposons qu’il vous fait 3 secondes pour tous les compter. Avec  12 chiffres, il vous faudrait 6 secondes , avec 18 , 9 secondes. La relation entre le  temps de comptage et le nombre de chiffre est linéaire. La complexité d’un tel algorithme est alors de 0(n).
+Prenons ces 6 chiffres mais dans un ordre aléatoire. Supposons qu’il vous faut 36 secondes pour trier ces chiffres du plus petit au plus grand. Combien de temps vous faudrait avec 12 elements ? Dans ce cas a relation n’est pas linéaire mais quadratique. La complexité est de 0(n²).</p>
+<p>Complexité poynomiale &amp; Complexité exponentielle</p>
+<p>Les complexité polynomiale = c’est cool
+les complexité exponentielle c’est l’horreur …</p>
+<p>Problème NP : ptetre pas.. trop compliqué …</p>
 </div>
 </div>
 <div class="section" id="l-architecture-d-un-ordinateur">
