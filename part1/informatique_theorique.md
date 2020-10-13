@@ -4,7 +4,7 @@
 
 L'informatique est omniprésente de nos jour aussi bien dans nos loisir que nos métiers. Les fondements théoriques sont pourtant rarement enseigné et l'outil est souvent utilisé comme une boite noire cachant un incroyable mystère. 
 En tant que formation en bioinformatique, il nous parait importer d'aborder certain concepte théorique en science de l'information qui pourrons être utilisé come un socle pour comprendre le fonctionnement et les containtes des algorithmes utilisé en bioinformatique. 
-NSans entrer dans les détails,  nous définirons dans ce chapitre la nature de l'information et comment la quantifier. Puis nous détaillerons le fonctionnement d'une machine d'une turing, l'ancêtre de nos ordinateurs, qui nous conduira à la définition des algorithmes et de leurs complexités. Nous détaillerons enfin l'architecture et les différents composants d'un ordinateur moderne.
+Sans entrer dans les détails,  nous définirons dans ce chapitre la nature de l'information et comment la quantifier. Puis nous détaillerons le fonctionnement d'une machine d'une turing pour comprendre comment un ordinateur calcul. Nous détaillerons enfin l'architecture et les différents composants d'un ordinateur moderne.
 
 ## Comment representer l'information ? 
 
@@ -96,9 +96,20 @@ Théorie de la calculabilité / algorithme / procedure ...
 
 ![machine de Turing](https://i.gifer.com/9dzg.gif)
 
+### Algorithme 
+Un algorithme c'est une description de la procédure à suivre pour réaliser la transformation d'une information en entré (input) vers une nouvelle information en sortie (output).
+
 ### Complexité algorithmique 
-Complexité algorithmique 
-Thèse de Church et truc 
+La complexité d'un algorithme est défini par la relation entre le temps d'execution et la taille de son entrée.
+Prenons, les 6 chiffres suivants et supposons qu'il vous fait 3 secondes pour tous les compter. Avec  12 chiffres, il vous faudrait 6 secondes , avec 18 , 9 secondes. La relation entre le  temps de comptage et le nombre de chiffre est linéaire. La complexité d'un tel algorithme est alors de 0(n). 
+Prenons ces 6 chiffres mais dans un ordre aléatoire. Supposons qu'il vous faut 36 secondes pour trier ces chiffres du plus petit au plus grand. Combien de temps vous faudrait avec 12 elements ? Dans ce cas a relation n'est pas linéaire mais quadratique. La complexité est de 0(n²).
+
+Complexité poynomiale & Complexité exponentielle 
+
+Les complexité polynomiale = c'est cool 
+les complexité exponentielle c'est l'horreur ... 
+
+Problème NP : ptetre pas.. trop compliqué ... 
 
 ## L'architecture d'un ordinateur
 
