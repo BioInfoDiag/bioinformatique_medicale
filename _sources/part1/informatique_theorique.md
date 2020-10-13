@@ -4,31 +4,53 @@
 
 L'informatique est omniprésente de nos jour aussi bien dans nos loisir que nos métiers. Les fondements théoriques sont pourtant rarement enseigné et l'outil est souvent utilisé comme une boite noire cachant un incroyable mystère. 
 En tant que formation en bioinformatique, il nous parait importer d'aborder certain concepte théorique en science de l'information qui pourrons être utilisé come un socle pour comprendre le fonctionnement et les containtes des algorithmes utilisé en bioinformatique. 
-Nous ce chapitre, nous définirons l'information et comment la quantifier. Puis nous détaillerons le fonctionnement d'une machine d'une turing, l'ancêtre de nos ordinateurs, qui nous conduira à la définition des algorithmes et de leurs complexités. Nous détaillerons enfin l'architecture et les différents composants d'un ordinateur moderne.
+NSans entrer dans les détails,  nous définirons dans ce chapitre la nature de l'information et comment la quantifier. Puis nous détaillerons le fonctionnement d'une machine d'une turing, l'ancêtre de nos ordinateurs, qui nous conduira à la définition des algorithmes et de leurs complexités. Nous détaillerons enfin l'architecture et les différents composants d'un ordinateur moderne.
 
 ## Comment representer l'information ? 
 
 ### Le système binaire
+Dans un langage, Pour representer l'information, nous utilisons des symboles appartenant à un alphabet. En les combinant ensemble, nous formons des mots qui portent du sens.
+Par exemple, notre alphabet est composé de 26 symboles avec lequels nous pouvons representer sur papier n'importe quel object du monde réel. Et le système de numération que nous utilisons est composé de 10 symboles (0,1,2,3,4,5,6,8,9) et permet de présenter n'importe quelle nombre entier naturel. 
+Les ordinateurs quant à eux, utilisent 2 symboles (le 1 et le 0) appelé bit. En assemblant les bits, il est de la même façon possible de representer n'importe quoi.
+De façon général, avec N bits, il y a 2^N  combinaisons et autant de signifiant possible.
+Par exemple pour representer une image en noir et blanc, nous pourrions utiliser 2 bits par pixel. 
 
-Dans un langage, Pour representer l'information, nous utilisons des symboles. En les combinant ensemble nous pouvons leurs donner du sens.  
-Par exemple, notre alphabet est composé de 26 symboles pour representer des mots. Et le système de numération que nous utilisons est composé de 10 symboles (0,1,2,3,4,5,6,8,9) pour représenter n'importe quelle nombre entier naturel. 
-Les ordinateurs quant à eux, utilisent 2 symboles (le 1 et le 0), appelé bit, pour representer n'importe quoi.
-Par exemple pour representer 4 couleurs, un ordinateur pourrait utiliser une combinaison de 2 bits:
+	0 : Noir 
+	1 : Blanc
+
+Avec 2 bits, nous pouvons representer 4 nuances de gris :
 
 	00 : Noir 
 	01:  Gris foncé 
 	10:  Gris clair
 	11 : Blanc
 
+Avec 4 bits, nous pouvons 16 couleurs différents.
 
-De façon général, avec N bits, nous pouvons representer 2^N choses différentes. 
+De la même façon, les nombres entiers peuvent être representer en utilisant un système binaire ou décimale. 
+L'exemple suivant montre comment representer un entier compris entre 0 et 7 ( 8 = 2^3) à l'aide des deux systèmes.
 
-La table associant les bits à leurs signifiant est appelé une norme de codage. 
-Cette norme est définie dans la specification du format d'un fichier informatique. Tous vos fichiers, que ce soit des vidéos, des images ou du texte sont representés de façon binaire en utilisant des normes spécifiques.
-Les ordinateurs actuels ne manipulent pas directement les bits. Mais plutôt des groupes de 8 bits appelé octets (ou bytes en anglais).
+Representation décimale : 
+0,1,2,3,4,5,6,7
 
-### L'encodage ASCII 
-L'encodage ASCII est une norme de codage pour définir les caractères alpha-numériques. Ils sont définis sur un octet et permettent de representer 128 caractères. Nous verrons plus tard, que cet encodage est utilisé astucieusement pour définir la qualité de séquençage. 
+Representation binaire :  
+000, 001, 010, 011, 100, 101, 110, 111 
+
+#### octets 
+Historiquement, les premiers ordinateurs manipulaient les bits par paquet de 8 qu'on appelle des octets ou bytes. 
+Avec un octet, il y a donc 255 combinaisons possibles. 
+Cette unité est largement utilisé notaemment dans la representation des caractères via l'encodage ASCII. 
+
+### L'hexadecimal 
+Un système courrament utilisé en informatique est le système hexadécimal composé des 16 symboles suivantes: 
+0,1,2,3,4,5,6,7,8,9,A,B,C,E,F.
+En effet, ce système permet de representer efficacement 1 octect en utilisant 2 symboles au lieu des 8 symboles requis par le binaire. 
+Par exemple : 
+11111111 = FF
+10011101 = 9D 
+Cette notation est particulierement utilisé dans la representation des couleurs. Une couleur est composé de 3 valeurs differents (Rouge, Vert, Bleu) comprise entre 0 et 255, soit 1 octect par couleur. 
+Ainsi la couleur violette peut s'écrire : 
+(00000111, 01110111, 00010111 )  soit en hexadecimal  #3D 33 C3
 
 ### L'ADN une séquence numérique 
 L'ADN est une séquence numérique au même titre que l'information circulant dans votre ordinateur. A l'instar du binaire qui utilise 2 symboles, l'ADN utilise 4 symboles via les 4 nucléotides A,C,G,T pour décrire le contenu en acide-aminé d'une protéine.  
