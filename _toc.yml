@@ -3,3 +3,8 @@
 - part: Informatique
   chapters:
   - file: part1/informatique_theorique
+
+- part: Statistique
+  chapters:
+  - file: part2/probabilite
+
